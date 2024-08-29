@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <!-- 🌟 MADE BY ÖMER ÇIKAN 🌟 -->
+
+    <!-- META TAG LIST -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serrena E-commerce, en son moda trendlerini, kaliteli ürünleri ve mükemmel müşteri hizmetini sunan online alışveriş mağazanızdır. Moda, teknoloji, ev eşyaları ve daha fazlasını keşfedin ve güvenli alışveriş deneyiminizi hemen yaşayın.">
+    <!-- PAGE TITLE -->
+    <title>Serrena</title>
+    <!-- WEBSITE FAVICON -->
+    <link rel="shortcut icon" href="img/serrena-favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- BT CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body id="body">
+    <div class="error-message">
+        <p><i class="fa-solid fa-circle-exclamation"></i> Lütfen istenilen şekilde doldurunuz!</p>
+    </div>
+
+    <!-- MAIN PAGE HEADER IS ANIMATED TEXT AREA -->
+    <header class="main-header">
+        <article class="main-header-container d-flex">
+            <p>200₺ BONUS ÖDÜLÜNÜZÜ ALIN</p>
+            <p>100₺ VE ÜZERİ SİPARİŞLERDE ÜCRETSİZ KARGO</p>
+            <p>%65'E VARAN İNDİRİMDEN YARARLANIN</p>
+            <p>200₺ BONUS ÖDÜLÜNÜZÜ ALIN</p>
+            <p>100₺ VE ÜZERİ SİPARİŞLERDE ÜCRETSİZ KARGO</p>
+            <p>%65'E VARAN İNDİRİMDEN YARARLANIN</p>
+        </article>
+    </header> 
+
+    <!-- MODAL BOX -->
+    <main class="main-modal">
+        <div class="main-modal-container d-flex">
+            <button class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="main-modal-container__img">
+                <img src="img/modal-img.avif" alt="">
+            </div>
+
+            <div class="main-modal-container__content text-center my-auto">
+                <h3>HABER BÜLTENİ</h3>
+                <p>Bültenimize kaydolun ve başka hiçbir yerde bulamayacağınız 
+                <br>özel fırsatları doğrudan e-posta kutunuza alın!</p>
+
+                <form action="#" novalidate>
+                   <div class="modal-email">
+                    <input type="email" id="modalEmailInput" placeholder="E-posta Adresinizi Buraya Girin" class="mt-4">
+                    <p id="resultMessage"></p>
+                    <button type="button" id="modalBtn" class="d-block mx-auto my-3">ABONE OL</button>
+                   </div>
+
+                    <label for="modalCheckbox">
+                        <input type="checkbox" id="modalCheckbox">
+                        <span>
+                            <font>Bu açılır pencereyi bir daha gösterme</font>
+                        </span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- HOME PAGE / NAVBAR AND CONTENT AREA -->
+    <main class="main-home">
+        <div class="main-home-container">
+            <!-- NAVBAR AREA -->
+            <nav class="main-home__nav d-flex justify-content-between align-items-center px-5 py-3">
+                <ul class="m-0 p-0 d-flex gap-3" id="NavlinkGroups">
+                    <li><a id="shop" href="shop.html">Mağaza</a></li>
+                    <li><a id="man" href="#">Erkek</a></li>
+                    <li><a id="woman" href="#">Kadın</a></li>
+                    <li><a id="child" href="#">Çocuk</a></li>
+                </ul>
+
+                <ul class="m-0 p-0">
+                    <li><a href="index.html">SERRENA</a></li>
+                </ul>
+
+                <ul class="m-0 p-0 d-flex gap-3">
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <li><a href="#" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+
+                <div class="search-box">
+                    <div class="search-box-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Ara...">
+                    </div>
+                </div>
+            </nav>
+
+            <!-- RESPONSIVE MENU 992PX AND BELOW -->
+            <nav class="main-home__responsive-nav d-flex justify-content-between pe-5 bg-light p-3 pb-0 d-lg-none ">
+                <ul>
+                    <li><a href="index.html">Serena</a></li>
+                </ul>
+
+                <ul class="bg-light ps-5">
+                    <li class="mb-3"><a id="shop" href="shop.html">Mağaza</a></li>
+                    <li class="mb-3"><a id="man" href="shop.html">Erkek</a></li>
+                    <li class="mb-3"><a id="woman" href="shop.html">Kadın</a></li>
+                    <li class="mb-3"><a id="child" href="shop.html">Çocuk</a></li>
+                    <li class="mb-3"><a href="about.html">Hakkında</a></li>
+                    <li class="mb-3"><a href="#">İletişim</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hamburger-menu">
+                        <a href="#" id="responsiveMenuIcon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CONTENT AREA -->
+            <div class="main-home__content">
+                <h1>Şık ve Uyumlu <br> Kıyafetler Giyin</h1>
+                <a href="shop.html" class="blue-btn">Şimdi Satın Al</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- BRANDS HERO SECTION -->
+    <section class="brands-hero">
+        <div class="brands-hero-container d-flex justify-content-center align-items-center">
+            <img src="img/brand-img/brand1.svg" alt="brands 1">
+            <img src="img/brand-img/brand2.svg" alt="brands 2">
+            <img src="img/brand-img/brand3.svg" alt="brands 3">
+            <img src="img/brand-img/brand4.svg" alt="brands 4">
+            <img src="img/brand-img/brand5.svg" alt="brands 5">
+            <img src="img/brand-img/brand6.svg" alt="brands 6">
+        </div>
+    </section>
+
+    <!-- BEST SELLER SECTION ONE -->
+    <section class="bestseller container">
+        <header class="bestseller-header">
+            <h1>Çok satanlar</h1>
+        </header>
+
+        <div class="bestseller-container">
+            <div class="bestseller-row row g-3">
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model1.webp" alt="model 1" class="img-fluid rounded" data-image="img/model-img/model1.webp">
+                        <span class="discount">-15%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="BÜYÜK BEDEN PAMUKLU TİŞÖRT">BÜYÜK BEDEN PAMUKLU TİŞÖRT</a>
+                            <span class="price d-block" data-price="190₺">190₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model1.webp" data-description="BÜYÜK BEDEN PAMUKLU TİŞÖRT" data-price="190₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 bestseller-favorite">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model2.webp" alt="model 2" class="img-fluid rounded">
+
+                        <div class="bestseller-animate-desc d-flex">
+                            <p>DAHA FAZLASINI GÖR EN ÇOK SATAN<i class="fa-solid fa-arrow-up-long mx-3"></i></p>
+                            <p>DAHA FAZLASINI GÖR EN ÇOK SATAN<i class="fa-solid fa-arrow-up-long mx-3"></i></p>
+                            <p>DAHA FAZLASINI GÖR EN ÇOK SATAN<i class="fa-solid fa-arrow-up-long ms-3"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model3.webp" alt="model 3" class="img-fluid rounded" data-image="img/model-img/model3.webp">
+                        <span class="discount">-20%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="DÜĞME DETAYLI CEKET">DÜĞME DETAYLI CEKET</a>
+                            <span class="price d-block" data-price="450₺">450₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model3.webp" data-description="DÜĞME DETAYLI CEKET" data-price="450₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model4.webp" alt="model 4" class="img-fluid rounded" data-image="img/model-img/model4.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KADIN SOLID SLIM FIT TEK DÜĞMELİ">KADIN SOLID SLIM FIT TEK DÜĞMELİ</a>
+                            <span class="price d-block" data-price="399₺">399₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model4.webp" data-description="KADIN SOLID SLIM FIT TEK DÜĞMELİ" data-price="399₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ECOMMERCE VIDEO SECTION -->
+    <section class="eccomerce-video">
+        <div class="eccomerce-video-container">
+            <video src="video/video.mp4" autoplay loop muted class="w-100"></video>
+
+            <div class="eccomerce-video-content">
+                <h3>Serrena'ya Özel Fırsat</h3>
+
+                <p>Serrena Exclusives ile modanın zirvesine adım atın. <br>Lüks ve şıklığın buluştuğu seçkin markalarla gardırobunuza <br> yeni bir soluk getirin. Eşsiz zarafetin ve sofistike tasarımların <br>dünyasına hoş geldiniz. Şimdi keşfedin ve tarzınızı yeniden tanımlayın!</p>
+
+                <a href="shop.html">Mağazayı Ziyaret Edin <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEST SELLER SECTION TWO -->
+    <section class="bestseller container">
+        <header class="bestseller-header">
+            <h1>Öne çıkanlar</h1>
+        </header>
+
+        <div class="bestseller-container">
+            <div class="bestseller-row row g-3">
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model5.webp" alt="model 5" class="img-fluid rounded" data-image="img/model-img/model5.webp">
+                        <span class="discount">-25%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="VİSKON GÖMLEK ELBİSE">VİSKON GÖMLEK ELBİSE</a>
+                            <span class="price d-block" data-price="349₺">349₺</span>
+                        </div>
+
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model5.webp" data-description="VİSKON GÖMLEK ELBİSE" data-price="349₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model6.webp" alt="model 6" class="img-fluid rounded" data-image="img/model-img/model6.webp">
+                        <span class="discount">-35%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="DÜZ NORMAL KOT PANTOLON">DÜZ NORMAL KOT PANTOLON</a>
+                            <span class="price d-block" data-price="499₺">499₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model6.webp" data-description="DÜZ NORMAL KOT PANTOLON" data-price="499₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 bestseller-favorite">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model7.webp" alt="model 7" class="img-fluid rounded">
+
+                        <div class="bestseller-animate-desc d-flex">
+                            <p>TÜM ÖNE ÇIKANLARI GÖR<i class="fa-solid fa-arrow-up-long mx-3"></i></p>
+                            <p>TÜM ÖNE ÇIKANLARI GÖR<i class="fa-solid fa-arrow-up-long mx-3"></i></p>
+                            <p>TÜM ÖNE ÇIKANLARI GÖR<i class="fa-solid fa-arrow-up-long ms-3"></i></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model8.jpg" alt="model 8" class="img-fluid rounded" data-image="img/model-img/model8.jpg">
+                        <span class="discount">-15%</span>
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PAMUKLU TWİLL CEKET">PAMUKLU TWİLL CEKET</a>
+                            <span class="price d-block" data-price="149₺">149₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model8.jpg" data-description="PAMUKLU TWİLL CEKET" data-price="149₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEN AND WOMEN CATEGORY -->
+    <section class="gender-category container">
+        <header class="gender-category-header d-flex justify-content-between align-items-center flex-wrap">
+            <h2>MAĞAZA</h2>
+            <a href="shop.html" class="blue-btn ">MAĞAZAYI ZİYARET ET</a>
+        </header>
+
+        <div class="gender-category-container my-5">
+            <div class="gender-category-row d-flex justify-content-center gap-4">
+                <a href="shop.html">
+                    <article class="gender-category-col overflow-hidden">
+                        <img src="img/men.webp" alt="category men" class="img-fluid h-100 w-100">
+    
+                        <div class="category-text"><h3 class="m-0">Erkek</h3></div>
+                    </article>
+                </a>
+
+                <a href="shop.html">
+                    <article class="gender-category-col overflow-hidden">
+                        <img src="img/women.webp" alt="category women" class=" h-100 w-100 img-fluid">
+    
+                        <div class="category-text"><h3 class="m-0">Kadın</h3></div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECOMMERCE SLIDERS MODEL -->
+    <section class="eccomerce-sliders container">
+        <header class="eccomerce-sliders__header">
+            <h2>ŞUNLAR DA HOŞUNUZA GİDEBİLİR</h2>
+        </header>
+
+        <div class="eccommerce-sliders__container my-5">
+            <div class="sliders-row d-flex">
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider1.webp" alt="slider 1" data-image="img/slider-img/slider1.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider1.webp" data-description="STRETCH DOKUMA PANTOLON" data-price="389₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="STRETCH DOKUMA PANTOLON">STRETCH DOKUMA PANTOLON</a>
+                        <span class="price d-block" data-price="389₺">389₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider2.webp" alt="slider 2" data-image="img/slider-img/slider2.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider2.webp" data-description="PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK" data-price="699₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK">PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK</a>
+                        <span class="price d-block" data-price="699₺">699₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider3.jpg" alt="slider 3" data-image="img/slider-img/slider3.jpg">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider3.jpg" data-description="SU İTİCİ ŞİŞME MONT" data-price="389₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="SU İTİCİ ŞİŞME MONT">SU İTİCİ ŞİŞME MONT</a>
+                        <span class="price d-block" data-price="389₺">389₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider4.webp" alt="slider 4" data-image="img/slider-img/slider4.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider4.webp" data-description="Mavi kot ceket" data-price="259₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="Mavi kot ceket">Mavi kot ceket</a>
+                        <span class="price d-block" data-price="259₺">259₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider5.webp" alt="slider 5" data-image="img/slider-img/slider5.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider5.webp" data-description="CITY ESCAPE PREMIUM KARGO PANTALONU" data-price="489₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="CITY ESCAPE PREMIUM KARGO PANTALONU" data-price="489₺">CITY ESCAPE PREMIUM KARGO PANTALONU</a>
+                        <span class="price d-block">489₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider6.webp" alt="slider 6" data-image="img/slider-img/slider6.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider6.webp" data-description="KETEN KARIŞIMLI GÖMLEK" data-price="199₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="KETEN KARIŞIMLI GÖMLEK">KETEN KARIŞIMLI GÖMLEK</a>
+                        <span class="price d-block" data-price="199₺">199₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider7.jpg" alt="slider 7" data-image="img/slider-img/slider7.jpg"> 
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider7.jpg" data-description="PAMUKLU PİKE POLO GÖMLEK" data-price="789₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="PAMUKLU PİKE POLO GÖMLEK">PAMUKLU PİKE POLO GÖMLEK</a>
+                        <span class="price d-block" data-price="789₺">789₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider8.jpg" alt="slider 8" data-image="img/slider-img/slider8.jpg">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider8.jpg" data-description="TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ" data-price="679₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ">TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ</a>
+                        <span class="price d-block" data-price="679₺">679₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider9.webp" alt="slider 9" data-image="img/slider-img/slider9.webp">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider9.webp" data-description="KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT" data-price="579₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT">KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT</a>
+                        <span class="price d-block" data-price="579₺">579₺</span>
+                    </div>
+                </div>
+
+                <div class="sliders-col">
+                    <img src="img/slider-img/slider10.jpg" alt="slider 10" data-image="img/slider-img/slider10.jpg">
+
+                    <div class="slider-btn">
+                        <button type="button" class="white-btn" data-image="img/slider-img/slider10.jpg" data-description="KETEN KARIŞIMLI GÖMLEK ELBİSE" data-price="579₺">Şimdi al</button>
+                    </div>
+
+                    <div class="sliders-content">
+                        <a href="#" data-description="KETEN KARIŞIMLI GÖMLEK ELBİSE">KETEN KARIŞIMLI GÖMLEK ELBİSE</a>
+                        <span class="price d-block" data-price="579₺">579₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sliders-btn d-flex justify-content-between w-100 px-3">
+                <a href="#" id="prev"><i class="fa-solid fa-chevron-left"></i></a>
+                <a href="#" id="next"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STRIP -->
+    <section class="footer-strip pb-5">
+        <div class="footer-strip__container d-flex justify-content-between align-items-center">
+            <div class="footer-strip-left">
+                <h3 class="m-0">Bültenimize kaydolun ve <br>%20 indirim kazanın</h3>
+            </div>
+
+            <div class="footer-strip-right">
+                <button type="button" class="blue-btn">ücretsiz kaydol</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER END SHOURT CUT LINKS GROUP -->
+    <footer class="footer-group">
+        <div class="footer-group__container container d-flex justify-content-between">
+            <div class="footer-group-col">
+                <h4>SERENA</h4>
+                <p>Güvenilir moda <br>arkadaşınız</p>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>NAVİGASYON</h4>
+                    <li><a href="#body">Ana sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="shop.html">Mağaza</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>KATEGORİLER</h4>
+                    <li><a href="shop.html">Erkek</a></li>
+                    <li><a href="shop.html">Kadın</a></li>
+                    <li><a href="shop.html">Çocuk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0 d-flex gap-2">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/?lang=tr" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="mailto:infoserrena@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="d-block text-center my-5">&copy;2024 Tüm hakları saklıdır. <span>Ömer Çıkan</span> tarafından desteklenmektedir.</span>
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

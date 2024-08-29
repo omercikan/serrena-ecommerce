@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <!-- 🌟 MADE BY ÖMER ÇIKAN 🌟 -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- WEBSITE FAVICON -->
+    <link rel="shortcut icon" href="img/serrena-favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- BT CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+    <div class="error-message">
+        <p><i class="fa-solid fa-circle-exclamation"></i> Lütfen istenilen şekilde doldurunuz!</p>
+    </div>
+
+    <!-- HOME PAGE / NAVBAR AND CONTENT AREA -->
+    <main class="main-home h-auto">
+        <div class="main-home-container" style="background-image: none;">
+            <!-- NAVBAR AREA -->
+            <nav class="main-home__nav d-flex justify-content-between align-items-center px-5 py-3">
+                <ul class="m-0 p-0 d-flex gap-3">
+                    <li><a href="shop.html">Mağaza</a></li>
+                    <li><a href="product.html">Erkek</a></li>
+                    <li><a href="product.html">Kadın</a></li>
+                    <li><a href="product.html">Çocuk</a></li>
+                </ul>
+
+                <ul class="m-0 p-0">
+                    <li><a href="index.html">SERRENA</a></li>
+                </ul>
+
+                <ul class="m-0 p-0 d-flex gap-3">
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <li><a href="#" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+
+                <div class="search-box">
+                    <div class="search-box-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Ara...">
+                    </div>
+                </div>
+            </nav>
+
+            <!-- RESPONSIVE MENU 992PX AND BELOW -->
+            <nav class="main-home__responsive-nav d-flex justify-content-between pe-5 bg-light p-3 pb-0 d-lg-none ">
+                <ul>
+                    <li><a href="index.html">Serena</a></li>
+                </ul>
+
+                <ul class="bg-light ps-5">
+                    <li class="mb-3"><a href="shop.html">Mağaza</a></li>
+                    <li class="mb-3"><a href="product.html">Erkek</a></li>
+                    <li class="mb-3"><a href="product.html">Kadın</a></li>
+                    <li class="mb-3"><a href="product.html">Çocuk</a></li>
+                    <li class="mb-3"><a href="about.html">Hakkında</a></li>
+                    <li class="mb-3"><a href="#">İletişim</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hamburger-menu">
+                        <a href="#" id="responsiveMenuIcon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- MODAL BOX -->
+    <main class="main-modal">
+        <div class="main-modal-container d-flex">
+            <button class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="main-modal-container__img">
+                <img src="img/modal-img.avif" alt="">
+            </div>
+
+            <div class="main-modal-container__content text-center my-auto">
+                <h3>HABER BÜLTENİ</h3>
+                <p>Bültenimize kaydolun ve başka hiçbir yerde bulamayacağınız 
+                <br>özel fırsatları doğrudan e-posta kutunuza alın!</p>
+
+                <form action="#" novalidate>
+                   <div class="modal-email">
+                    <input type="email" id="modalEmailInput" placeholder="E-posta Adresinizi Buraya Girin" class="mt-4">
+                    <p id="resultMessage"></p>
+                    <button type="button" id="modalBtn" class="d-block mx-auto my-3">ABONE OL</button>
+                   </div>
+
+                    <label for="modalCheckbox">
+                        <input type="checkbox" id="modalCheckbox">
+                        <span>
+                            <font>Bu açılır pencereyi bir daha gösterme</font>
+                        </span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- MAIN PRODUCTS AREA -->
+    <main class="products-area d-flex m-3 my-5 py-5 mb-3">
+        <div class="product-area-container d-flex gap-4">
+            <div class="product-area__image">
+                <h2 id="productDescResponsive" class="d-none"></h2>
+                <div class="main-product">
+                    <img src="img/model-img/model1.webp" alt="product" id="productsImg">
+                </div>
+
+                <div class="product-preview d-flex justify-content-center gap-3 mt-3 ">
+                    <img src="img/product-img/product-1.avif" alt="preview 1">
+                    <img src="img/product-img/product-2.avif" alt="preview 2">
+                </div>
+            </div>
+
+            <div class="product-area__content">
+                <h2 id="productDesc">BÜYÜK BEDEN PAMUKLU TİŞÖRT</h2>
+                <a href="#" id="productPrice"></a>
+                <p class="product-text my-3 mb-4">Günlük yaşamınızda ve özel anlarınızda şıklığı ve konforu bir arada sunan bu ürün, 
+                her detayıyla fark yaratır. Modern tasarımı ve yüksek kaliteli malzemeleri sayesinde 
+                hem estetik hem de dayanıklıdır. Her türlü kombinle uyum sağlayarak stilinize zarif 
+                bir dokunuş katar.</p>
+
+                <div class="color-options mb-5">
+                    <span>Renk:</span>
+                    <div class="colors-group">
+                        <label class="active"><input type="radio"></label>
+                        <label><input type="radio"></label>
+                        <label><input type="radio"></label>
+                        <label><input type="radio"></label>
+                    </div>
+                </div>
+
+                <div class="size-options mb-3">
+                    <span>Beden:</span>
+                    <div class="size-group mt-3 d-flex gap-1 flex-wrap">
+                        <span>XS</span>
+                        <span>S</span>
+                        <span class="active">M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <input type="number" placeholder="Beden" max="150" min="0" id="sizeInput">
+                    </div>
+                </div>
+
+                <div class="add-to-bag d-flex gap-2 flex-wrap">
+                    <input type="number" id="shopInputNumber" min="1" max="100" value="1">
+                    <a href="#" class="blue-btn">Sepete ekle</a>
+                </div>
+                
+                <ul class="mt-5 pt-3 p-0">
+                    <h5>BOYUT VE UYUM</h5>
+                    <li>Kesim: Normal Kesim</li>
+                    <li>Göğüs: 32</li>
+                    <li>Bel: 26</li>
+                    <li>Kalça: 36</li>
+                    <li>Boy: 5'7</li>
+                </ul>
+
+                <ul class="mt-5 pt-5 ps-0">
+                    <h5>MALZEME VE BAKIM</h5>
+                    <li>Pamuk Karışımı, Kuru Temizleme</li>
+                </ul>
+
+                <div class="product-features">
+                    <h5>ÖZELLİKLER</h5>
+                    <p>Bu şık ve çok yönlü parça, her anınıza zarif bir dokunuş katmak için tasarlandı. 
+                    Modern kesimi ve kaliteli kumaşı sayesinde hem gündüz hem gece kullanımına 
+                    uygundur. İş toplantılarında, özel etkinliklerde veya günlük şıklık arayışınızda 
+                    mükemmel bir tercih olan bu ürün, zarafeti ve konforu bir araya getiriyor. 
+                    Kusursuz kesimi ve detaylarıyla stilinizi vurgulayacak ve size özgüven 
+                    kazandıracak.</p>
+
+                    <p>Her mevsime uygun bu zamansız parça, stilinize sofistike bir dokunuş katmak için 
+                    tasarlandı. Modern ve rahat kesimiyle günlük hayatınızı şıklıkla birleştirin. İş yerinden 
+                    sosyal etkinliklere kadar geniş bir kullanım yelpazesi sunan bu ürün, hem rahat 
+                    hem de şık olmanızı sağlayacak. Üstün kaliteli kumaşı ve dikkat çekici detayları ile 
+                    her ortamda göz alıcı bir görünüm elde edeceksiniz.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="reviews-area container">
+        <p id="reviewsTitle"></p>
+
+        <ul class="list-unstyled" id="reviewsWrapper">
+            <li class="d-flex gap-2">
+                <div class="reviews-img">
+                    <img src="img/user.png" alt="" width="60" height="60">
+                </div>
+
+                <div class="reviews-info">
+                    <div class="stars d-flex">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+
+                    <p class="mt-1 mb-0"><span>Ömer Çıkan</span> - 10 Temmuz 2024</p>
+                    <p>Ürünü birkaç hafta önce aldım ve genel olarak memnun kaldım. Kumaşı oldukça kaliteli ve dokusu çok yumuşak. Kesimi, bedenime mükemmel uydu ve rahat bir kullanım sağladı. Renk seçenekleri de oldukça geniş, bu yüzden istediğim renk tonunu bulmakta zorlanmadım.</p>
+                </div>
+            </li>
+
+            <li class="d-flex gap-2 pt-3 border-top">
+                <div class="reviews-img">
+                    <img src="img/user.png" alt="" width="60" height="60">
+                </div>
+
+                <div class="reviews-info">
+                    <div class="stars d-flex">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+
+                    <p class="mt-1 mb-0"><span>Ahmet Çelik</span> - 30 Nisan 2024</p>
+                    <p>Bu ürünü birkaç gün önce aldım ve genel olarak karışık bir deneyim yaşadım. Ürünün tasarımı ve rengi oldukça şık ve modern, bu yönü kesinlikle beğendim. Kalitesi de genel olarak tatmin edici, dikişleri düzgün ve detayları özenle yapılmış.</p>
+                </div>
+            </li>
+
+            <li class="d-flex gap-2 pt-3 border-top">
+                <div class="reviews-img">
+                    <img src="img/user.png" alt="" width="60" height="60">
+                </div>
+
+                <div class="reviews-info">
+                    <div class="stars d-flex">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+
+                    <p class="mt-1 mb-0"><span>Ece Yı****</span> - 30 Nisan 2024</p>
+                    <p>Bu ürünü birkaç hafta önce satın aldım ve genel olarak memnun kaldım. Ürün, şık tasarımı ve kaliteli malzemesi ile dikkat çekiyor. Görseldeki gibi gerçek birinci sınıf bir görünüm sunuyor ve kullanım sırasında rahatlık sağlıyor.</p>
+                </div>
+            </li>
+
+            <li class="d-flex gap-2 pt-3 border-top">
+                <div class="reviews-img">
+                    <img src="img/user.png" alt="" width="60" height="60">
+                </div>
+
+                <div class="reviews-info">
+                    <div class="stars d-flex">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+
+                    <p class="mt-1 mb-0"><span>Elif N*****</span> - 30 Nisan 2024</p>
+                    <p>Bu ürünü alırken beklentilerim yüksekti ve genel olarak performansından memnun kaldım, ancak bazı küçük eksiklikler de göz ardı edilemez. Ürünün tasarımı modern ve estetik açıdan hoş; malzeme kalitesi ise genel olarak iyi. Kullanımı rahat ve fonksiyonel.
+                    <br><br>
+                    Ancak, ürünün bazı yönlerinde iyileştirme yapılabilir. Örneğin, kullanım talimatlarına dikkat edilmesine rağmen, bazı detaylarda beklenmedik sorunlar yaşadım. Ürünün dayanıklılığı hakkında net bir görüş oluşturmak için daha uzun süre kullanmak gerekebilir. Ayrıca, ürünün fiyatı biraz yüksek olabilir, bu yüzden benzer özelliklere sahip daha uygun fiyatlı alternatifler de değerlendirilebilir.</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="reviews-event">
+            <h2 class="border-bottom pb-3">Değerlendirme ekle</h2>
+
+            <div class="degree-options">
+                <p class="mb-1">Yıldız verin <span>*</span></p>
+
+                <div class="degrees-star d-flex flex-wrap gap-3">
+                    <div class="degree">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="degree border-start ps-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="degree border-start ps-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="degree border-start ps-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="degree border-start ps-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <form class="mt-3" id="reviewsForm" action="#">
+                <div class="reviews-text">
+                    <label for="reviewsTxt">Yorumunuz <span>*</span></label>
+                    <textarea id="reviewsTxt" class="d-block" rows="10"></textarea>
+                </div>
+
+                <div class="reviews-text my-3">
+                    <label for="reviewsNameInput">İsim <span>*</span></label>
+                    <input type="text" id="reviewsNameInput" class="d-block">
+                </div>
+
+                <div class="reviews-text my-3">
+                    <label for="reviewsEmailInput">E-posta <span>*</span></label>
+                    <input type="email" id="reviewsEmailInput" class="d-block">
+                </div>
+                
+                <button type="submit" id="reviewsSendBtn">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BEST SELLER SECTION ONE -->
+    <section class="bestseller container">
+        <header class="bestseller-header">
+            <h1>Şunlar da hoşunuza gidebilir</h1>
+        </header>
+
+        <div class="bestseller-container">
+            <div class="bestseller-row row g-3">
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model8.jpg" alt="model 1" class="img-fluid rounded" data-image="img/model-img/model8.jpg">
+                        <span class="discount">-15%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Pamuklu Twill Ceket">Pamuklu Twill Ceket</a>
+                            <span class="price d-block" data-price="149₺">149₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model8.jpg" data-description="Pamuklu Twill Ceket" data-price="149₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/product-recommendation/product-1.avif" alt="model 1" class="img-fluid rounded" data-image="img/product-recommendation/product-1.avif">
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Marangoz Jogger Pantolon">Marangoz Jogger Pantolon</a>
+                            <span class="price d-block" data-price="249₺">249₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-1.avif" data-description="Marangoz Jogger Pantolon" data-price="249₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/product-recommendation/product-2.webp" alt="model 3" class="img-fluid rounded" data-image="img/product-recommendation/product-2.webp">
+                        <span class="discount">-20%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Kot Ceket">Kot Ceket</a>
+                            <span class="price d-block" data-price="579₺">579₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-2.webp" data-description="Kot Ceket" data-price="579₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6">
+                    <div class="bestseller-img">
+                        <img src="img/product-recommendation/product-3.avif" alt="model 4" class="img-fluid rounded" data-image="img/product-recommendation/product-3.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Bisikletçi Ceketi">Bisikletçi Ceketi</a>
+                            <span class="price d-block" data-price="689₺">689₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-3.avif" data-description="Bisikletçi Ceketi" data-price="689₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER STRIP -->
+     <section class="footer-strip pb-5 pt-5">
+        <div class="footer-strip__container d-flex justify-content-between align-items-center">
+            <div class="footer-strip-left">
+                <h3 class="m-0">Bültenimize kaydolun ve <br>%20 indirim kazanın</h3>
+            </div>
+
+            <div class="footer-strip-right">
+                <button type="button" class="blue-btn">ücretsiz kaydol</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER END SHOURT CUT LINKS GROUP -->
+    <footer class="footer-group">
+        <div class="footer-group__container container d-flex justify-content-between">
+            <div class="footer-group-col">
+                <h4>SERENA</h4>
+                <p>Güvenilir moda <br>arkadaşınız</p>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>NAVİGASYON</h4>
+                    <li><a href="index.html">Ana sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="shop.html">Mağaza</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>KATEGORİLER</h4>
+                    <li><a href="shop.html">Erkek</a></li>
+                    <li><a href="shop.html">Kadın</a></li>
+                    <li><a href="shop.html">Çocuk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0 d-flex gap-2">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/?lang=tr" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="mailto:infoserrena@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="d-block text-center my-5">&copy;2024 Tüm hakları saklıdır. <span>Ömer Çıkan</span> tarafından desteklenmektedir.</span>
+    </footer>
+    
+    <script src="js/reviews.js"></script>
+    <script src="js/produtc.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

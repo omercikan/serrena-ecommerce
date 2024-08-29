@@ -1,0 +1,42 @@
+.shop-header {
+
+    h1 {
+        font-size: 80px !important;
+        font-weight: 700 !important;
+    }
+
+    p {
+        a:first-child {
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+
+        span:last-child {
+            font-family: 'Montserrat', sans-serif;
+            color: #4170e8;
+            font-size: 18px;
+        }
+    }
+}
+
+.filters {
+    width: max-content;
+    margin-bottom: 3rem;
+
+    span {
+        font-family: 'Afacad', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .4s ease-out;
+    }
+}
+
+.filters span.active {
+    color: #8a8a8a;
+}

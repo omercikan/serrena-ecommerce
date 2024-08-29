@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <!-- 🌟 MADE BY ÖMER ÇIKAN 🌟 -->
+
+    <!-- META TAG LIST -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serrena E-commerce, en son moda trendlerini, kaliteli ürünleri ve mükemmel müşteri hizmetini sunan online alışveriş mağazanızdır. Moda, teknoloji, ev eşyaları ve daha fazlasını keşfedin ve güvenli alışveriş deneyiminizi hemen yaşayın.">
+    <!-- PAGE TITLE -->
+    <title>Serrena</title>
+    <!-- WEBSITE FAVICON -->
+    <link rel="shortcut icon" href="img/serrena-favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <!-- BT CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body id="body">
+    <div class="error-message">
+        <p><i class="fa-solid fa-circle-exclamation"></i> Lütfen istenilen şekilde doldurunuz!</p>
+    </div>
+
+    <!-- MODAL BOX -->
+    <main class="main-modal">
+        <div class="main-modal-container d-flex">
+            <button class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="main-modal-container__img">
+                <img src="img/modal-img.avif" alt="">
+            </div>
+
+            <div class="main-modal-container__content text-center my-auto">
+                <h3>HABER BÜLTENİ</h3>
+                <p>Bültenimize kaydolun ve başka hiçbir yerde bulamayacağınız 
+                <br>özel fırsatları doğrudan e-posta kutunuza alın!</p>
+
+                <form action="#" novalidate>
+                   <div class="modal-email">
+                    <input type="email" id="modalEmailInput" placeholder="E-posta Adresinizi Buraya Girin" class="mt-4">
+                    <p id="resultMessage"></p>
+                    <button type="button" id="modalBtn" class="d-block mx-auto my-3">ABONE OL</button>
+                   </div>
+
+                    <label for="modalCheckbox">
+                        <input type="checkbox" id="modalCheckbox">
+                        <span>
+                            <font>Bu açılır pencereyi bir daha gösterme</font>
+                        </span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- HOME PAGE / NAVBAR AND CONTENT AREA -->
+    <main class="main-home h-auto">
+        <div class="main-home-container h-auto" style="background-image: none;">
+            <!-- NAVBAR AREA -->
+            <nav class="main-home__nav d-flex justify-content-between align-items-center px-5 py-3">
+                <ul class="m-0 p-0 d-flex gap-3">
+                    <li><a href="shop.html">Mağaza</a></li>
+                    <li><a href="shop.html">Erkek</a></li>
+                    <li><a href="shop.html">Kadın</a></li>
+                    <li><a href="shop.html">Çocuk</a></li>
+                </ul>
+
+                <ul class="m-0 p-0">
+                    <li><a href="index.html">SERRENA</a></li>
+                </ul>
+
+                <ul class="m-0 p-0 d-flex gap-3">
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <li><a href="#" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+
+                <div class="search-box">
+                    <div class="search-box-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Ara...">
+                    </div>
+                </div>
+            </nav>
+
+            <!-- RESPONSIVE MENU 992PX AND BELOW -->
+            <nav class="main-home__responsive-nav d-flex justify-content-between pe-5 bg-light p-3 pb-0 d-lg-none ">
+                <ul>
+                    <li><a href="index.html">Serena</a></li>
+                </ul>
+
+                <ul class="bg-light ps-5">
+                    <li class="mb-3"><a href="shop.html">Mağaza</a></li>
+                    <li class="mb-3"><a href="shop.html">Erkek</a></li>
+                    <li class="mb-3"><a href="shop.html">Kadın</a></li>
+                    <li class="mb-3"><a href="shop.html">Çocuk</a></li>
+                    <li class="mb-3"><a href="about.html">Hakkında</a></li>
+                    <li class="mb-3"><a href="#">İletişim</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hamburger-menu">
+                        <a href="#" id="responsiveMenuIcon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- BEST SELLER SECTION ONE -->
+    <section class="bestseller container">
+        <header class="bestseller-header shop-header text-center">
+            <h1>Mağaza</h1>
+            <p><a href="index.html">Anasayfa</a> <i class="fa-solid fa-chevron-right mx-2"></i> <span id="currentInfo">Mağaza</span></p>
+        </header>
+
+        <div class="filters d-flex gap-3">
+            <span data-filter="all" class="active">Tümü</span>
+            <span data-filter="Erkek">Erkek</span>
+            <span data-filter="Kadın">Kadın</span>
+            <span data-filter="Çocuk">Çocuk</span>
+        </div>
+
+        <div class="bestseller-container">
+            <div class="bestseller-row row g-3">
+                <div class="bestseller-col col-lg-3 col-sm-6" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model5.webp" alt="model 1" class=" rounded" data-image="img/model-img/model5.webp">
+                        <span class="discount">-25%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="BÜYÜK BEDEN PAMUKLU TİŞÖRT">Viskon Gömlek Elbise</a>
+                            <span class="price d-block" data-price="349₺">349₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model5.webp" data-description="Viskon Gömlek Elbise" data-price="349₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model6.webp" alt="model 3" class=" rounded" data-image="img/model-img/model6.webp">
+                        <span class="discount">-35%</span>
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="DÜZ NORMAL KOT PANTOLON">DÜZ NORMAL KOT PANTOLON</a>
+                            <span class="price d-block" data-price="499₺">499₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model6.webp" data-description="DÜZ NORMAL KOT PANTOLON" data-price="499₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6" id="child">
+                    <div class="bestseller-img">
+                        <span class="discount">-15%</span>
+                        <img src="img/model-img/model8.jpg" alt="model 4" class=" rounded" data-image="img/model-img/model8.jpg">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PAMUKLU TWİLL CEKET">PAMUKLU TWİLL CEKET</a>
+                            <span class="price d-block" data-price="149₺">149₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model8.jpg" data-description="PAMUKLU TWİLL CEKET" data-price="149₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-1.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-1.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Bol Kot Pantolon">Bol Kot Pantolon</a>
+                            <span class="price d-block" data-price="329₺">329₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-1.avif" data-description="Bol Kot Pantolon" data-price="329₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-2.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-2.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Regular Fit Kaplamalı Ceket">Regular Fit Kaplamalı Ceket</a>
+                            <span class="price d-block" data-price="479₺">479₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-2.avif" data-description="Regular Fit Kaplamalı Ceket" data-price="479₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/product-recommendation/product-1.avif" alt="model 4" class=" rounded" data-image="img/product-recommendation/product-1.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Marangoz Jogger Pantolon">Marangoz Jogger Pantolon</a>
+                            <span class="price d-block" data-price="249₺">249₺</span>
+                        </div>
+    
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-1.avif" data-description="Marangoz Jogger Pantolon" data-price="249₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-3.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-3.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="ZNE PREMIUM TAM FERMUARLI KAPÜŞONLU EŞOFMAN CEKETİ">ZNE PREMIUM TAM FERMUARLI KAPÜŞONLU EŞOFMAN CEKETİ</a>
+                            <span class="price d-block" data-price="349₺">349₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-3.avif" data-description="ZNE PREMIUM TAM FERMUARLI KAPÜŞONLU EŞOFMAN CEKETİ" data-price="349₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-1.avif" alt="model 4" class=" rounded" data-image="img/shop-img/woman-1.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Büyük Boy Kırışık Elbise">Büyük Boy Kırışık Elbise</a>
+                            <span class="price d-block" data-price="899₺">899₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-1.avif" data-description="Büyük Boy Kırışık Elbise" data-price="899₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <span class="discount">-15%</span>
+                        <img src="img/model-img/model1.webp" alt="model 4" class=" rounded" data-image="img/model-img/model1.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Büyük Beden Pamuklu Tişört">Büyük Beden Pamuklu Tişört</a>
+                            <span class="price d-block" data-price="190₺">190₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model1.webp" data-description="Büyük Beden Pamuklu Tişört" data-price="190₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <span class="discount">-12%</span>
+                        <img src="img/shop-img/man-4.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-4.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PEMBE TİŞÖRT">PEMBE TİŞÖRT</a>
+                            <span class="price d-block" data-price="249₺">249₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-4.avif" data-description="PEMBE TİŞÖRT" data-price="249₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-2.webp" alt="model 4" class=" rounded" data-image="img/shop-img/woman-2.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Siyah Çiçekli Bağcıklı Yaka Şifon Elbise">Siyah Çiçekli Bağcıklı Yaka Şifon Elbise</a>
+                            <span class="price d-block" data-price="749₺">749₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-2.webp" data-description="Siyah Çiçekli Bağcıklı Yaka Şifon Elbise" data-price="749₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-5.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-5.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KAMUFLAJ YONCA TİŞÖRT">KAMUFLAJ YONCA TİŞÖRT</a>
+                            <span class="price d-block" data-price="429₺">429₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-5.avif" data-description="KAMUFLAJ YONCA TİŞÖRT" data-price="429₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <span class="discount">-20%</span>
+                        <img src="img/product-recommendation/product-2.webp" alt="model 4" class=" rounded" data-image="img/product-recommendation/product-2.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Kot Ceket">Kot Ceket</a>
+                            <span class="price d-block" data-price="579₺">579₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-2.webp" data-description="Kot Ceket" data-price="579₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <span class="discount">-20%</span>
+                        <img src="img/model-img/model3.webp" alt="model 4" class=" rounded" data-image="img/model-img/model3.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="DÜĞME DETAYLI CEKET">DÜĞME DETAYLI CEKET</a>
+                            <span class="price d-block" data-price="450₺">450₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model3.webp" data-description="DÜĞME DETAYLI CEKET" data-price="450₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/product-recommendation/product-3.avif" alt="model 4" class=" rounded" data-image="img/product-recommendation/product-3.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Bisikletçi Ceketi">Bisikletçi Ceketi</a>
+                            <span class="price d-block" data-price="689₺">689₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/product-recommendation/product-3.avif" data-description="Bisikletçi Ceketi" data-price="689₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/model-img/model4.webp" alt="model 4" class=" rounded" data-image="img/model-img/model4.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KADIN SOLID SLIM FIT TEK DÜĞMELİ">KADIN SOLID SLIM FIT TEK DÜĞMELİ</a>
+                            <span class="price d-block" data-price="399₺">399₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/model-img/model4.webp" data-description="KADIN SOLID SLIM FIT TEK DÜĞMELİ" data-price="399₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-6.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-6.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PureWhite TİŞÖRT">PureWhite TİŞÖRT</a>
+                            <span class="price d-block" data-price="459₺">459₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-6.avif" data-description="PureWhite TİŞÖRT" data-price="459₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/man-7.avif" alt="model 4" class=" rounded" data-image="img/shop-img/man-7.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Slim Fit Geniş Paça Twill Pantolon">Slim Fit Geniş Paça Twill Pantolon</a>
+                            <span class="price d-block" data-price="899₺">899₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/man-7.avif" data-description="Slim Fit Geniş Paça Twill Pantolon" data-price="899₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-3.webp" alt="model 4" class=" rounded" data-image="img/shop-img/woman-3.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KADIN SİYAH AKILLI SLİM FIT OPAQUE RENK BLOKLU GÜNLÜK GÖMLEK">KADIN SİYAH AKILLI SLİM FIT OPAQUE RENK BLOKLU GÜNLÜK GÖMLEK</a>
+                            <span class="price d-block" data-price="479₺">479₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-3.webp" data-description="KADIN SİYAH AKILLI SLİM FIT OPAQUE RENK BLOKLU GÜNLÜK GÖMLEK" data-price="479₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/child-1.avif" alt="model 4" class=" rounded" data-image="img/shop-img/child-1.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Pamuklu Jersey Tişört">Pamuklu Jersey Tişört</a>
+                            <span class="price d-block" data-price="139₺">139₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/child-1.avif" data-description="Pamuklu Jersey Tişört" data-price="139₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-4.avif" alt="model 4" class=" rounded" data-image="img/shop-img/woman-4.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Pamuklu Jersey Tişört">Pamuklu Jersey Tişört</a>
+                            <span class="price d-block" data-price="539₺">539₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-4.avif" data-description="Pamuklu Jersey Tişört" data-price="539₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/modal-img.avif" alt="model 4" class=" rounded" data-image="img/modal-img.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Rahat Kesim Kot Ceket">Rahat Kesim Kot Ceket</a>
+                            <span class="price d-block" data-price="389₺">389₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/modal-img.avif" data-description="Rahat Kesim Kot Ceket" data-price="389₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-5.avif" alt="model 4" class=" rounded" data-image="img/shop-img/woman-5.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Toplanmış kollu ceket">Toplanmış kollu ceket</a>
+                            <span class="price d-block" data-price="989₺">989₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-5.avif" data-description="Toplanmış kollu ceket" data-price="989₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/woman-6.avif" alt="model 4" class=" rounded" data-image="img/shop-img/woman-6.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Gözlü İşlemeli Gömlek">Gözlü İşlemeli Gömlek</a>
+                            <span class="price d-block" data-price="679₺">679₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/woman-6.avif" data-description="Gözlü İşlemeli Gömlek" data-price="679₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/child-2.avif" alt="model 4" class=" rounded" data-image="img/shop-img/child-2.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Twill Çinolar">Twill Çinolar</a>
+                            <span class="price d-block" data-price="139₺">139₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/child-2.avif" data-description="Twill Çinolar" data-price="139₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/shop-img/child-3.avif" alt="model 4" class=" rounded" data-image="img/shop-img/child-3.avif">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Baskılı Jersey Üstler">Baskılı Jersey Üstler</a>
+                            <span class="price d-block" data-price="129₺">129₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/shop-img/child-3.avif" data-description="Baskılı Jersey Üstler" data-price="129₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider5.webp" alt="model 4" class=" rounded" data-image="img/slider-img/slider5.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="CITY ESCAPE PREMIUM KARGO PANTALONU">CITY ESCAPE PREMIUM KARGO PANTALONU</a>
+                            <span class="price d-block" data-price="489₺">489₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider5.webp" data-description="CITY ESCAPE PREMIUM KARGO PANTALONU" data-price="489₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider4.webp" alt="model 4" class="rounded" data-image="img/slider-img/slider4.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Mavi kot ceket">Mavi kot ceket</a>
+                            <span class="price d-block" data-price="259₺">259₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider4.webp" data-description="Mavi kot ceket" data-price="259₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider3.jpg" alt="model 4" class="rounded" data-image="img/slider-img/slider3.jpg">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="SU İTİCİ ŞİŞME MONT">SU İTİCİ ŞİŞME MONT</a>
+                            <span class="price d-block" data-price="389₺">389₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider3.jpg" data-description="SU İTİCİ ŞİŞME MONT" data-price="389₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider2.webp" alt="model 4" class="rounded" data-image="img/slider-img/slider2.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK">PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK</a>
+                            <span class="price d-block" data-price="699₺">699₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider2.webp" data-description="PAS RENGİ FIRFIRLI YAYILMIŞ GÖMLEK" data-price="699₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider1.webp" alt="model 4" class="rounded" data-image="img/slider-img/slider1.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="STRETCH DOKUMA PANTOLON">STRETCH DOKUMA PANTOLON</a>
+                            <span class="price d-block" data-price="389₺">389₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider1.webp" data-description="STRETCH DOKUMA PANTOLON" data-price="389₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider10.jpg" alt="model 4" class="rounded" data-image="img/slider-img/slider10.jpg">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="Keten Karışımlı Gömlek Elbise">Keten Karışımlı Gömlek Elbise</a>
+                            <span class="price d-block" data-price="579₺">579₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider10.jpg" data-description="Keten Karışımlı Gömlek Elbise" data-price="579₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider9.webp" alt="model 4" class="rounded" data-image="img/slider-img/slider9.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT">KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT</a>
+                            <span class="price d-block" data-price="579₺">579₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider9.webp" data-description="KISA KOLLU TEMEL İŞLEMELİ TİŞÖRT" data-price="579₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="man">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider8.jpg" alt="model 4" class="rounded" data-image="img/slider-img/slider8.jpg">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ">TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ</a>
+                            <span class="price d-block" data-price="679₺">679₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider8.jpg" data-description="TERREX XPLORIC RAIN.RDY YÜRÜYÜŞ CEKETİ" data-price="679₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="child">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider7.jpg" alt="model 4" class="rounded" data-image="img/slider-img/slider7.jpg">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="PAMUKLU PİKE POLO GÖMLEK">PAMUKLU PİKE POLO GÖMLEK</a>
+                            <span class="price d-block" data-price="789₺">789₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider7.jpg" data-description="PAMUKLU PİKE POLO GÖMLEK" data-price="789₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestseller-col col-lg-3 col-sm-6 mt-4" id="woman">
+                    <div class="bestseller-img">
+                        <img src="img/slider-img/slider6.webp" alt="model 4" class="rounded" data-image="img/slider-img/slider6.webp">
+
+                        <div class="bestseller-desc">
+                            <a href="#" data-description="KETEN KARIŞIMLI GÖMLEK">KETEN KARIŞIMLI GÖMLEK</a>
+                            <span class="price d-block" data-price="199₺">199₺</span>
+                        </div>
+                        
+                        <div class="bestseller-shopping">
+                            <button type="button" class="white-btn" data-image="img/slider-img/slider6.webp" data-description="KETEN KARIŞIMLI GÖMLEK" data-price="199₺">Şimdi al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STRIP -->
+    <section class="footer-strip pb-5">
+        <div class="footer-strip__container d-flex justify-content-between align-items-center">
+            <div class="footer-strip-left">
+                <h3 class="m-0">Bültenimize kaydolun ve <br>%20 indirim kazanın</h3>
+            </div>
+
+            <div class="footer-strip-right">
+                <button type="button" class="blue-btn">ücretsiz kaydol</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER END SHOURT CUT LINKS GROUP -->
+    <footer class="footer-group">
+        <div class="footer-group__container container d-flex justify-content-between">
+            <div class="footer-group-col">
+                <h4>SERENA</h4>
+                <p>Güvenilir moda <br>arkadaşınız</p>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>NAVİGASYON</h4>
+                    <li><a href="index.html">Ana sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="shop.html">Mağaza</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0">
+                    <h4>KATEGORİLER</h4>
+                    <li><a href="shop.html">Erkek</a></li>
+                    <li><a href="shop.html">Kadın</a></li>
+                    <li><a href="shop.html">Çocuk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-group-col">
+                <ul class="p-0 d-flex gap-2">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/?lang=tr" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="mailto:infoserrena@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="d-block text-center my-5">&copy;2024 Tüm hakları saklıdır. <span>Ömer Çıkan</span> tarafından desteklenmektedir.</span>
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <script src="js/shop.js"></script>
+    <script src="js/produtc.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
