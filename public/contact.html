@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="tr"><head>
+<html lang="tr">
+<head>
 
     <!-- 🌟 MADE BY ÖMER ÇIKAN 🌟 -->
 
-    <!-- META TAG LIST -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- PAGE TITLE -->
-    <title>Serrena - Biz Kimiz?</title>
-    <!-- PAGE FAVICON -->
-    <link rel="shortcut icon" href="img/serrena-favicon.png" type="img/serrena-favicon.png">
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="css/about.css">
+    <title>Serrena - Bize Ulaşın..</title>
+    <!-- WEBSITE FAVICON -->
+    <link rel="shortcut icon" href="img/serrena-favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <!-- BT CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-
+    
     <!-- MODAL BOX -->
     <main class="main-modal">
         <div class="main-modal-container d-flex">
@@ -35,7 +35,7 @@
                 <p>Bültenimize kaydolun ve başka hiçbir yerde bulamayacağınız 
                 <br>özel fırsatları doğrudan e-posta kutunuza alın!</p>
 
-                <form action="#" novalidate="">
+                <form action="#" novalidate>
                    <div class="modal-email">
                     <input type="email" id="modalEmailInput" placeholder="E-posta Adresinizi Buraya Girin" class="mt-4">
                     <p id="resultMessage"></p>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </main>
-    
+
     <!-- HOME PAGE / NAVBAR AND CONTENT AREA -->
     <main class="main-home" style="height: max-content !important;">
         <div class="main-home-container" style="background-image: none;">
@@ -112,101 +112,97 @@
         </div>
     </main>
 
-    <!-- ABOUT HEADER -->
+    <!-- CONTACT HEADER -->
     <section class="bestseller">
         <header class=" bestseller-header shop-header text-center mt-5 pt-5">
-            <h1>Biz Kimiz?</h1>
-            <p><a href="index.html">Anasayfa</a> <i class="fa-solid fa-chevron-right mx-2"></i> <span id="currentInfo">Hakkımızda</span></p>
+            <h1>Bize Ulaşın</h1>
+            <p><a href="index.html">Anasayfa</a> <i class="fa-solid fa-chevron-right mx-2"></i> <span id="currentInfo">İletişim</span></p>
         </header>
-
-        <img src="img/about-img/office.jpg" alt="" width="100%" height="400" class="object-fit-cover about-img">
     </section>
 
-    <!-- ABOUT SKILLS -->
-    <section class="row g-0 justify-content-center my-5 py-5 about-skills">
-        <article class="col-md-6">
-            <h3>ÇEVRİMİÇİ ALIŞVERİŞ</h3>
-            <p>Tarzınızı yansıtan zarif 
-            <br>aksesuarlarla dolabınızı 
-            <br>şık bir şekilde yenileyin.</p>
-        </article>
+    <!-- CONTACT FORM -->
+    <div class="contact-form container d-flex justify-content-center gap-5">
+        <div class="contact-text-col">
+            <h3>Bir sorunuz mu var? 
+            <br>Size yardımcı olmaktan
+            <br>mutluluk duyarız!</h3>
 
-        <article class="col-md-6">
-            <h3>ÜCRETSİZ KARGO</h3>
-            <p>Her alışverişinizde hızlı 
-            <br>ve güvenli teslimatın 
-            <br>ayrıcalığını yaşayın.</p>
-        </article>
+            <ul class="p-0 my-5">
+                <h4>Bizi arayın</h4>
+                <li>(555) 238-4910</li>
+                <li>(555) 927-6342</li>
+            </ul>
 
-        <article class="col-md-6">
-            <h3>İADE POLİTİKASİ</h3>
-            <p>Müşteri memnuniyeti bizim 
-            <br>için esastır. Beklentilerinizi 
-            <br>karşılamayan ürünleri kolayca 
-            <br>iade edin.</p>
-        </article>
+            <ul class="p-0">
+                <h4>E-Posta</h4>
+                <li>support@serrena.com</li>
+            </ul>
+        </div>
 
-        <article class="col-md-6">
-            <h3>ÖDEME YÖNTEMLERİ</h3>
-            <p>Güvenli ve pratik ödeme 
-            <br>seçenekleriyle alışverişinizi 
-            <br>rahatça tamamlayın.</p>
-        </article>
-    </section>
+        <form action="#" id="contactForm" novalidate> 
+            <div class="input-group">
+                <input type="text" placeholder="İsim" name="name" class="form-control" id="nameTxt">
+            </div>
+            
+            <div class="input-group my-3">
+                <input type="email" placeholder="Email" name="email" class="form-control" id="emailTxt">
+            </div>
 
-    <!-- TEXT ARTICLE ABOUT SERRENA -->
-    <section class="article-text container text-center">
-        <p>Serrena'nın ruhu, zamanın ötesine geçen ve gerçek şıklığın özünü yansıtan derin bir felsefeye sahiptir. Koleksiyonlarımız, zarafet, işlevsellik ve yenilikçiliği harmanlayarak kişisel tarzınızı ve kendinizi ifade etme biçiminizi geliştirmek için özenle tasarlanmıştır. Modanın, her bireyin özgün hikayesini güçlendiren, ilham veren ve yansıtan bir sanat olduğunu düşünüyoruz. Serrena, sadece bir giyim markası değil; modanın estetiğini ve bireysel ifadenin zarif sanatını yaşatan bir yaşam tarzını ifade eder.</p>
-    </section>
+            <div class="input-group mb-3">
+                <textarea name="message" placeholder="Mesajınızı giriniz.." class="form-control" id="msgTxt" rows="12"></textarea>
+            </div>
+            
+            <button type="submit" id="submitBtn">Üye Ol</button>
 
-    <!-- BRANDS HERO SECTION -->
-    <section class="brands-hero mya-5 py-5">
-        <div class="brands-hero-container d-flex justify-content-center align-items-center">
-            <img src="img/brand-img/brand1.svg" alt="brands 1">
-            <img src="img/brand-img/brand2.svg" alt="brands 2">
-            <img src="img/brand-img/brand3.svg" alt="brands 3">
-            <img src="img/brand-img/brand4.svg" alt="brands 4">
-            <img src="img/brand-img/brand5.svg" alt="brands 5">
-            <img src="img/brand-img/brand6.svg" alt="brands 6">
+            <div class="loader-wrapper">
+                <div class="loader"></div>
+            </div>
+
+            <div class="check">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+        </form>
+    </div>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+    <section class="frequently-section my-5 py-5">
+        <header class="text-center frequently-title mb-5">Sıkça Sorulan Sorular</header>
+
+        <div class="frequently-wrapper">
+            <article>
+                <header class="d-flex align-items-center justify-content-between frequentlyOpen">
+                    <h4>Yeni koleksiyonlar ne sıklıkla tanıtılıyor?</h4>
+                    <i class="fa-solid fa-house"></i>
+                </header>
+
+                <div class="frequently-text open">
+                    <p>Koleksiyonlarımızı sürekli olarak güncelleyerek en son trendleri ve farklı stilleri sizlerle buluşturuyoruz. Yeni koleksiyonlar mevsimlere göre tanıtılır ve modanın en güncel yönlerini keşfetmenizi sağlar.</p>
+                </div>
+            </article>
+
+            <article class="my-3">
+                <header class="d-flex align-items-center justify-content-between frequentlyOpen">
+                    <h4>Uluslararası gönderim hizmeti sağlıyor musunuz?</h4>
+                    <i class="fa-solid fa-house"></i>
+                </header>
+
+                <div class="frequently-text">
+                    <p>Evet, Serrena'nın şık koleksiyonlarını dünya genelindeki müşterilere ulaştırmak için uluslararası gönderim hizmeti sunuyoruz. Teslimat süreleri ve gönderim ücretleri varış noktasına göre değişiklik gösterebilir.</p>
+                </div>
+            </article>
+
+            <article>
+                <header class="d-flex align-items-center justify-content-between frequentlyOpen">
+                    <h4>Hediye çekleri sunuyor musunuz?</h4>
+                    <i class="fa-solid fa-house"></i>
+                </header>
+
+                <div class="frequently-text">
+                    <p>Evet, kesinlikle! Serrena, sevdiklerinize şık moda seçenekleri hediye etmenin en iyi yolu olan çeşitli hediye kartları sunmaktadır. Hediye kartlarımız, özel anlarınızı daha da özel kılmak için mükemmel bir seçimdir.</p>
+                </div>
+            </article>
         </div>
     </section>
-
-    <!-- SOCIAL MEDIA SECTION -->
-    <main class="social-media d-flex flex-column align-items-center mb-5 pb-5 container">
-        <header class="my-5 align-self-start">
-            @serrenA'yı takip edin
-        </header>
-
-        <section class="row g-3 justify-content-center">
-            <article class="col-lg-3 col-md-6 col-sm-6">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/about-img/social-photo-1.jpg" alt="social-photo-1">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </article>
-
-            <article class="col-lg-3 col-md-6 col-sm-6">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/about-img/social-photo-2.jpg" alt="social-photo-2" style="object-position: top;">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </article>
-
-            <article class="col-lg-3 col-md-6 col-sm-6">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/about-img/social-photo-3.jpg" alt="social-photo-3">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </article>
-
-            <article class="col-lg-3 col-md-6 col-sm-6">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/about-img/socia-photo-4.jpg" alt="social-photo-4">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </article>
-        </section>
-    </main>
 
     <!-- FOOTER STRIP -->
     <section class="footer-strip pb-5">
@@ -258,11 +254,12 @@
             </div>
         </div>
 
-        <span class="d-block text-center my-5">©2024 Tüm hakları saklıdır. <span>Ömer Çıkan</span> tarafından desteklenmektedir.</span>
+        <span class="d-block text-center my-5">&copy;2024 Tüm hakları saklıdır. <span>Ömer Çıkan</span> tarafından desteklenmektedir.</span>
     </footer>
 
-    <!-- CUSTOM JS -->
-    <script src="js/app.js"></script>
 
+    <!-- CUSTOM JS -->
+    <script src="js/contact.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
