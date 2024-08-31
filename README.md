@@ -12,6 +12,6 @@
 	 **** 'FOOTER' alanı.
 ![](https://l24.im/ZeafslB)
 
-CANLI DEMO LINK: https://serrena-eccomerce.netlify.app/
+CANLI DEMO LINK: https://serrena-ecommerce.netlify.app/
 
 Not: Sepet işlemleri eklenecektir.
