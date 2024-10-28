@@ -54,15 +54,15 @@
 <h1>Görseller</h1>
 
 	 Anasayfa giriş ekranı.
-![](https://l24.im/OgEN)
+![Home](https://res.cloudinary.com/dwyvwkzap/image/upload/v1730156266/serrena-1_oi3iby.png)
 
 	Çok satanlar 'CARD' alanı.
-![](https://l24.im/7q9rTBs)
+![Card](https://res.cloudinary.com/dwyvwkzap/image/upload/v1730156257/serrena-2_pn8rgt.png)
 
 	Ürünler 'SLIDER' gösterim alanı.
-![](https://l24.im/KU5Ee)
+![Slider](https://res.cloudinary.com/dwyvwkzap/image/upload/v1730156246/serrena-3_esxxxe.png)
 
 	'FOOTER' alanı.
-![](https://l24.im/ZeafslB)
+![Footer](https://res.cloudinary.com/dwyvwkzap/image/upload/v1730156232/serrena-4_vd2xeu.png)
 
 CANLI DEMO LINK: https://serrena-ecommerce.netlify.app/
