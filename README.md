@@ -29,7 +29,7 @@
 <ol>
   <li>Projeyi klonlayın:
     <br><br>
-    <pre><code>git clone https://github.com/kullaniciadi/serrena-ecommerce.git</code></pre>
+    <pre><code>git clone https://github.com/omercikan/serrena-ecommerce.git</code></pre>
   </li>
   <li>Proje dizinine gidin:
     <br><br>
